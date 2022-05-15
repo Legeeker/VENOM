@@ -108,4 +108,7 @@ La variable current donne l'indice dans la liste Players du joueur devant donner
 
 La variable board donne le plateau de jeu. 
 
+### lancement du jeu 
 
+Pour lancer le jeu , il faut tout d'abord se connecter au serveur(verifier que l'addresse correspond bien(ligne 15 du code)). 
+Ensuite il faut lancer le terminal et lancer le fichier VENOM .Apres ca le jeu peut commencer . 
