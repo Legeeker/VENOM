@@ -115,9 +115,9 @@ Pour lancer le jeu , il faut tout d'abord se connecter au serveur (vérifier que
 Ensuite il faut lancer le terminal et lancer le fichier VENOM . Après ça le jeu peut commencer .
 
 ## **Bibliothèques utilisées** ## 
-'json'
-'pytest'
-'game'
-'socket'
-'random'
-'copy'
+1) json
+2) pytest
+3) game
+4) socket
+5) random
+6) copy
