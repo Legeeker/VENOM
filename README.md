@@ -8,6 +8,7 @@ Cela nous permettra d'échanger des informations avec le serveur afin de respect
 ## Stratégie utilisée
 Notre projet se base sur une fonction :  
     -bestcoup()
+
 cette fonction permet de jouer les meilleurs coups possibles face a une IA random. 
 le principe est simple lorsque le serveur nous envoie une requette de certaines cases de possibilité a jouer , la fonction selectionnera les cases censé etre les mieux joues (via la fonction possibleMove). 
 
