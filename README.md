@@ -9,14 +9,14 @@ Cela nous permettra d'échanger des informations avec le serveur afin de respect
 Notre projet se base sur une fonction :  
     -bestcoup()
 
-cette fonction permet de jouer les meilleurs coups possibles face a une IA random. 
-le principe est simple lorsque le serveur nous envoie une requette de certaines cases de possibilité a jouer , la fonction selectionnera les cases censé etre les mieux joues (via la fonction possibleMove). 
+Cette fonction permet de jouer les meilleurs coups possibles face à une IA random. 
+Le principe est simple : lorsque le serveur nous envoie une requette de certaines cases de possibilité à jouer , la fonction sélectionnera les cases censées être les mieux jouées (via la fonction possibleMove). 
 
-les meilleures cases sont principalement les coins(bestcoup). 
-la fonction bestcoup renvoie du meilleur coup possible a jouer au pire coup cad que si aucun meilleur coup est a jouer il devra etre obliger de joue un coup pas tres utile . 
+Les meilleures cases sont principalement les coins (bestcoup). 
+La fonction bestcoup renvoie du meilleur coup possible à jouer au pire coup c'est à dire que si aucun meilleur coup est à jouer , il devra être obliger de jouer un coup pas très utile . 
 
 
-## Listes des requêtes / réponse : 
+## Listes des requêtes / réponses : 
 
 ### Inscription : 
 
@@ -47,9 +47,9 @@ Si tout se passe correctement, le serveur répond :
 ### Vérification de la présence : 
 
 
- Afin de vérifier si le client est toujours connecté, le serveur envoit régulièrement des requète "ping" sur le port mentionné lors de l'inscription, auquelle nous devons répondre "pong"
+ Afin de vérifier si le client est toujours connecté, le serveur envoie régulièrement des requêtes "ping" sur le port mentionné lors de l'inscription, auxquelle nous devons répondre "pong".
 
-Requète ping : 
+Requête ping : 
 
 ```json
 {
@@ -63,7 +63,7 @@ Réponse :
    "response": "pong"
 }
 ```
-réponse en cas d'erreur:
+Réponse en cas d'erreur:
 ```json
 {
    "response": "error",
@@ -92,7 +92,7 @@ La variable lives donne le nombre de vies restantes du joueur, chaque joueur a 3
 
 La variable errors liste les raisons pour lesquelles les coups joués étaient mauvais.
 
-La variable state donne l'état du jeu, elle contient différentes infos nécéssaire au client afin qu'il puisse décider comment jouer. 
+La variable state donne l'état du jeu, elle contient différentes informations nécessaires au client afin qu'il puisse décider comment jouer. 
 
 La réponse du client est: 
 
@@ -109,7 +109,7 @@ La variable current donne l'indice dans la liste Players du joueur devant donner
 
 La variable board donne le plateau de jeu. 
 
-### lancement du jeu 
+### Lancement du jeu 
 
-Pour lancer le jeu , il faut tout d'abord se connecter au serveur(verifier que l'addresse correspond bien(ligne 15 du code)). 
-Ensuite il faut lancer le terminal et lancer le fichier VENOM .Apres ca le jeu peut commencer . 
+Pour lancer le jeu , il faut tout d'abord se connecter au serveur (vérifier que l'addresse correspond bien (ligne 15 du code) ). 
+Ensuite il faut lancer le terminal et lancer le fichier VENOM . Après ça le jeu peut commencer . 
