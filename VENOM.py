@@ -12,8 +12,9 @@ import game
 
 
 
-address = ('172.17.33.221', 3000) #adresse du serveur 
-serveurAddress = ("0.0.0.0" , 8888) #adresse du client 
+address = ('localhost', 3000) #adresse du serveur 
+serveurAddress = ("0.0.0.0" , int(sys.argv[1])) #adresse du client 
+
 #####fonction qui permet de se connecter au serveur et d'envoye un message json 
 def sender():
         
@@ -21,12 +22,13 @@ def sender():
             s.connect(address)
             message = json.dumps({
     "request": "subscribe",
-    "port": 8888,
+    "port": int(sys.argv[1]),
     "name": "VENOM",
     "matricules": ["12345", "0000"]
  }
 
             )
+
 
             s.send(message.encode())
             print(s.recv(2048).decode())

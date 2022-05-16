@@ -112,7 +112,7 @@ La variable board donne le plateau de jeu.
 ### Lancement du jeu 
 
 Pour lancer le jeu , il faut tout d'abord se connecter au serveur (vérifier que l'addresse correspond bien (ligne 15 du code) ). 
-Ensuite il faut lancer le terminal et lancer le fichier VENOM . Après ça le jeu peut commencer .
+Ensuite il faut lancer le terminal et lancer le fichier VENOM suivi du numero de port(ex:1234). Après ça le jeu peut commencer .
 
 ## **Bibliothèques utilisées** ## 
 1) json
